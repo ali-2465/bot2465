@@ -54,6 +54,18 @@ function onMessageHandler (target, context, msg, self) {
   } else {
     console.log(`* Unknown command ${commandName}`);
   }
+  if (commandName === ')kill fallenxy') {
+    client.say(target, `⣿⣿⣿⣿⣿⣿⣿⠟⣉⣉⣉⡉⠉⠙⠛⠿⣿⣿⣿⣿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿ ⣿⣿⣿⣿⣿⣿⠋⣰⣿⣿⣿⣿⣿⣦⠄⠄⠄⠙⠋⢁⣠⣤⣄⠄⠄⠈⢻⣿⣿⣿ ⣿⣿⣿⣿⡟⢁⣾⣿⣿⣿⣿⣿⣿⣿⣷⣴⣤⣤⣶⣿⣿⣿⣿⣧⠄⠄⠂⢹⣿⣿ ⣿⣿⡿⠋⣴⣿⣿⣿⡿⠟⠛⠛⠿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⣿⡆⠄⠄⠄⣿⣿ ⣿⠟⣠⣾⣿⣿⣿⠏⣰⣾⣿⣿⣷⡌⢻⣿⣿⣿⠋⣴⣶⣶⣶⣦⡁⠄⠄⠄⣿⣿ ⠏⠄⣛⣿⣿⣿⣿⡀⣿⣿⣦⣿⣿⡟⠘⣿⣿⣿⠘⣿⣿⣤⣿⣿⡇⠄⠄⠄⠘⢿ ⠄⢠⠁⡖⢬⡛⢯⠄⠈⠙⠛⠛⠉⠄⣰⣿⣿⣿⣄⠈⠙⠛⠛⠋⠄⠄⢀⡔⢲⠘ ⡆⠄⢢⡙⠦⣙⠶⠤⣄⣀⡀⠄⠴⠿⠿⢿⣿⣿⣿⣷⣤⣀⡀⠄⣀⠔⡁⠴⠖⢠ ⡇⠄⠄⢻⣶⣌⠳⢦⣄⡀⠉⠉⠉⠑⠒⠲⠶⠶⠶⠶⣶⣶⡶⠟⣡⠜⠄⠄⢰⣿ ⣿⠄⠄⠄⠻⣿⣿⣦⣍⡻⢷⣦⣄⡀⠄⠄⠄⠄⠄⠄⠄⢀⣠⡾⢃⠄⠄⠄⣸⣿ ⢋⣴⣆⠄⠄⠈⠻⢿⣿⣿⣶⣬⣉⡛⠷⣶⣦⣤⣤⣴⠶⠟⡋⠔⠁⠄⢀⣴⣿⣿ ⣿⣿⣿⣷⣦⣀⠄⠄⠉⠻⠿⢿⠿⢿⣷⣶⣤⠤⠤⠖⠒⠁⠄⠄⢀⣴⣿⣿⣿⣿ ⣿⣿⣿⣿⣿⣿⣷⣦⣀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿⣿ ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿ @fallenxy`);
+    console.log(`* Executed ${commandName} command`);
+  } else {
+    console.log(`* Unknown command ${commandName}`);
+  } 
+  if (commandName === ')commands') {
+    client.say(target, `)ping, )info, )test, )dice, )kill (only for fallen)`);
+    console.log(`* Executed ${commandName} command`);
+  } else {
+    console.log(`* Unknown command ${commandName}`);
+  }  
 }
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
