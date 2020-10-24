@@ -28,19 +28,19 @@ function onMessageHandler (target, context, msg, self) {
   const commandName = msg.trim();
 
   // If the command is known, let's execute it
-  if (commandName === 'Clap ping') {
+  if (commandName === ')ping') {
     client.say(target, `🅱ing :o`);
     console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
   }
-  if (commandName === 'Clap info') {
+  if (commandName === ')info') {
     client.say(target, `@${context['username']} I'm a simple chat bot that doesn't do anything useful, for now. Made by ali2465 :)`)
       console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
   }
-  if (commandName === 'Clap test') {
+  if (commandName === ')test') {
     const num = Math.floor(Math.random() * 999999999999) + 1; 
     client.say(target, `Test! # ${num}`);
     console.log(`* Executed ${commandName} command`);
