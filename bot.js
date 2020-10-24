@@ -47,12 +47,7 @@ function onMessageHandler (target, context, msg, self) {
   } else {
     console.log(`* Unknown command ${commandName}`);
   }
-   if (commandName === ')clap') {
-    client.say(target, `Clap`);
-    console.log(`* Executed ${commandName} command`);
-  } else {
-    console.log(`* Unknown command ${commandName}`);
-  }
+   for (let i=0; i<5; i++) { client.say(channel, 'Clap') } 
 }
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
