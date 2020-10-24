@@ -41,17 +41,12 @@ function onMessageHandler (target, context, msg, self) {
     console.log(`* Unknown command ${commandName}`);
   }
   if (commandName === '~test') {
-    const num = rollDice();
+    const num = Math.floor(Math.random() * 999999999999) + 1; 
     client.say(target, `Test! # ${num}`);
     console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
   }
-}
-// Function called when the "dice" command is issued
-function rollDice () {
-  const sides = 999999999999;
-  return Math.floor(Math.random() * sides) + 1;
 }
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
