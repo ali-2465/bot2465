@@ -28,26 +28,25 @@ function onMessageHandler (target, context, msg, self) {
   const commandName = msg.trim();
 
   // If the command is known, let's execute it
-  if (commandName === ')ping') {
+  if (commandName === 'Clap ping') {
     client.say(target, `🅱ing :o`);
     console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
   }
-  if (commandName === ')info') {
-    client.say(target, `I'm a simple chat bot that doesn't do anything useful, for now. Made by ali2465 :)`)
+  if (commandName === 'Clap info') {
+    client.say(target, `@${context['username']} I'm a simple chat bot that doesn't do anything useful, for now. Made by ali2465 :)`)
       console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
   }
-  if (commandName === ')test') {
+  if (commandName === 'Clap test') {
     const num = Math.floor(Math.random() * 999999999999) + 1; 
     client.say(target, `Test! # ${num}`);
     console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
   }
-   for (let i=0; i<5; i++) { client.say(channel, 'Clap') } 
 }
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
