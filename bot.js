@@ -49,7 +49,7 @@ function onMessageHandler (target, context, msg, self) {
   }
   if (commandName === ')dice') {
     const num = Math.floor(Math.random() * 6) + 1; 
-    client.say(target, `You rolled a # ${num}`);
+    client.say(target, `🎲 You rolled a ${num}.`);
     console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
