@@ -28,19 +28,19 @@ function onMessageHandler (target, context, msg, self) {
   const commandName = msg.trim();
 
   // If the command is known, let's execute it
-  if (commandName === '~ping') {
+  if (commandName === ')ping') {
     client.say(target, `🅱ing :o`);
     console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
   }
-  if (commandName === '~info') {
+  if (commandName === ')info') {
     client.say(target, `I'm a simple chat bot that doesn't do anything useful, for now. Made by ali2465 :)`)
       console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
   }
-  if (commandName === '~test') {
+  if (commandName === ')test') {
     const num = Math.floor(Math.random() * 999999999999) + 1; 
     client.say(target, `Test! # ${num}`);
     console.log(`* Executed ${commandName} command`);
