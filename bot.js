@@ -44,7 +44,7 @@ function onMessageHandler (target, context, msg, self) {
 }
 // Function called when the "dice" command is issued
 function rollDice () {
-  const sides = Infinity;
+  const sides = 999999999999;
   return Math.floor(Math.random() * sides) + 1;
 }
 // Called every time the bot connects to Twitch chat
