@@ -7,7 +7,7 @@ const opts = {
     password: "oauth:t0gcp8imlmysz5pm91ndeidw09350j"
   },
   channels: [
-    "ali2465", "kunszg", "haxk"
+    "ali2465", "kunszg", "haxk", "okabar", "alzexx"
   ]
 };
 // Create a client with our options
