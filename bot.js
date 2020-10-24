@@ -47,6 +47,13 @@ function onMessageHandler (target, context, msg, self) {
   } else {
     console.log(`* Unknown command ${commandName}`);
   }
+  if (commandName === ')dice') {
+    const num = Math.floor(Math.random() * 6) + 1; 
+    client.say(target, `You rolled a # ${num}`);
+    console.log(`* Executed ${commandName} command`);
+  } else {
+    console.log(`* Unknown command ${commandName}`);
+  }
 }
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
