@@ -34,6 +34,12 @@ function onMessageHandler (target, context, msg, self) {
   } else {
     console.log(`* Unknown command ${commandName}`);
   }
+  if (commandName === '~info') {
+    client.say(target, `I'm a simple chat bot that doesn't do anything useful, for now. Made by ali2465 :)`)
+      console.log(`* Executed ${commandName} command`);
+  } else {
+    console.log(`* Unknown command ${commandName}`);
+  }
   if (commandName === '~test') {
     const num = rollDice();
     client.say(target, `Test! # ${num}`);
