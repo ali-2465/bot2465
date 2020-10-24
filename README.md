@@ -1,4 +1,4 @@
 # bot2465
  Dumb twitch chat bot.
 # Steps:
- ¯\\_(ツ)_/¯
+ ¯\\__(ツ)__/¯
