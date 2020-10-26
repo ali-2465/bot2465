@@ -61,7 +61,7 @@ function onMessageHandler (target, context, msg, self) {
     console.log(`* Unknown command ${commandName}`);
   } 
   if (commandName === ')commands') {
-    client.say(target, `)ping, )info, )test, )dice, )kill, )daily%`);
+    client.say(target, `)ping, )info, )test, )dice, )kill`);
     console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
@@ -71,7 +71,13 @@ function onMessageHandler (target, context, msg, self) {
     console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
-  }   
+  }
+  if (commandName === ')ec') {
+    client.say(target, `$gift cookie emredesu`);
+    console.log(`* Executed ${commandName} command`);
+  } else {
+    console.log(`* Unknown command ${commandName}`);
+  }      
 }
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
