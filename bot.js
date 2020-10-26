@@ -61,7 +61,7 @@ function onMessageHandler (target, context, msg, self) {
     console.log(`* Unknown command ${commandName}`);
   } 
   if (commandName === ')commands') {
-    client.say(target, `)ping, )info, )test, )dice, )kill`);
+    client.say(target, `)ping, )info, )test, )dice, )kill, )daily%`);
     console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
