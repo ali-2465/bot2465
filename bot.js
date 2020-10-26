@@ -7,7 +7,7 @@ const opts = {
     password: "oauth:t0gcp8imlmysz5pm91ndeidw09350j"
   },
   channels: [
-    "ali2465", "kunszg", "haxk", "alzexx", "fallenxy"
+    "ali2465", "kunszg", "haxk", "alzexx", "fallenxy", "emredesu"
   ]
 };
 // Create a client with our options
@@ -65,7 +65,13 @@ function onMessageHandler (target, context, msg, self) {
     console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
-  }  
+  } 
+  if (commandName === ')daily%') {
+    client.say(target, `$% dayave`);
+    console.log(`* Executed ${commandName} command`);
+  } else {
+    console.log(`* Unknown command ${commandName}`);
+  }   
 }
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
