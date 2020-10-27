@@ -85,8 +85,14 @@ function onMessageHandler (channel, user, message, self) {
 
       const pullFromRepo = shell
         .execSync('sudo git pull')
-      console.log(String(pullFromRepo))
-      return;
+        .toString()
+        .split('\n')
+
+      const formatedResponse = pullFromRepo[0] + ' ' + (
+        pullFromRepo[2]
+        .replace(/-{2,}/g, "")
+        .replace(/\+{2,}/g, "");   
+        )
 
       if (pullFromRepo.toLowerCase().includes('already up to date')) {
         client.say(channel, `PunOko bot is already up to date`);
@@ -106,3 +112,4 @@ function onMessageHandler (channel, user, message, self) {
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
 } 
+// What the fuck is this code?
