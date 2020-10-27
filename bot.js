@@ -82,21 +82,25 @@ function onMessageHandler (channel, user, message, self) {
       client.say(channel, 'This command cannot be ran outside of Linux, you should use it on server version of the bot :)');
       return;
     }
+    
+    try {
+      const shell = require('child_process');
 
-    const shell = require('child_process');
+      const pullFromRepo = shell
+        .execSync('sudo git pull')
+        .toString()
+        .replace(/-{2,}/g, "")
+        .replace(/\+{2,}/g, "");
 
-    const pullFromRepo = shell
-      .execSync('sudo git pull')
-      .toString()
-      .replace(/-{2,}/g, "")
-      .replace(/\+{2,}/g, "");
-
-    client.say(channel, `TriHard FBCatch ${await pullFromRepo}`);
-                
-    setTimeout(() => {
-      shell.execSync(`sudo pm2 restart bot.js`);
-    }, 1000);
-    return;
+      client.say(channel, `TriHard FBCatch ${await pullFromRepo}`);
+                  
+      setTimeout(() => {
+        shell.execSync(`sudo pm2 restart bot.js`);
+      }, 1000);
+      return;
+    } catch (err) {
+      console.log(err)
+    }
   }
   console.log(`* Unknown command ${commandName}`);
 }
