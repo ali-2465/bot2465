@@ -115,4 +115,3 @@ function onMessageHandler (channel, user, message, self) {
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
 } 
-// What the fuck is this code?
