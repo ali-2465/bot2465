@@ -48,7 +48,7 @@ function onMessageHandler (channel, user, message, self) {
     return;
   } 
   if (commandName.split(' ')[0]  === ')kill') {
-    const msg = message.split(' '); if (msg[1].toLowerCase() === "themselves") 
+    const msg = message.split(' '); if (msg[1].toLowerCase() === "themselves", "himself", "herself") 
     {client.say(channel, 'No.'); return;}
     client.say(channel, `${user['username']} just killed ${message.split(' ')[1]} monkaS`)
     return;
