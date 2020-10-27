@@ -1,1 +1,0 @@
-exports.password = 'oauth:t0gcp8imlmysz5pm91ndeidw09350j';
