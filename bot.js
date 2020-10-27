@@ -48,7 +48,7 @@ function onMessageHandler (channel, user, message, self) {
     return;
   } 
   if (commandName === ')kill') {
-    client.say(channel, `${user['username']} just killed ${message.split(' ')[1]}`) 
+    client.say(channel, `${user['username']} just killed ${message.split(' ')[1]} monkaS`) 
     return;
   } 
   if (commandName === ')commands') {
