@@ -96,7 +96,7 @@ function onMessageHandler (channel, user, message, self) {
       const formattedResponse = pullFromRepo[0] + ' ' + (
         pullFromRepo[2]
         .replace(/-{2,}/g, "")
-        .replace(/\+{2,}/g, "");   
+        .replace(/\+{2,}/g, "")
         )
       console.log(pullFromRepo, formattedResponse)
       client.say(channel, `VoHiYo ${formattedResponse}`);
@@ -113,3 +113,4 @@ function onMessageHandler (channel, user, message, self) {
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
 } 
+// xd
