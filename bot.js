@@ -67,7 +67,7 @@ function onMessageHandler (channel, user, message, self) {
     client.say(channel, `Link to the repository :) 👉 https://github.com/ali-2465/bot2465`);
     return;
   } 
-  if (commandName === '!xd') {
+  if (commandName === '!xd'&& (channel === "#haxk" )) {
     client.say(channel, `⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠛⠛⠛⠛⠛⠛⠿⠿⣿⣿⣿⣿⣿ 
                          ⣿⣿⣯⡉⠉⠉⠙⢿⣿⠟⠉⠉⠉⣩⡇⠄⠄⢀⣀⣀⡀⠄⠄⠈⠹⣿⣿⣿ 
                          ⣿⣿⣿⣷⣄⠄⠄⠈⠁⠄⠄⣠⣾⣿⡇⠄⠄⢸⣿⣿⣿⣷⡀⠄⠄⠘⣿⣿ 
