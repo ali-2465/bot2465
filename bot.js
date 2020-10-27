@@ -29,7 +29,7 @@ function onMessageHandler (channel, user, message, self) {
   const commandName = message.trim();
 
   // If the command is known, let's execute it
-  if (commandName === ')ping') {
+  if ((commandName === ")ping" || commandName === ")bing")) 
     client.say(channel, `🅱ing :o`);
     return;
   } 
@@ -67,7 +67,7 @@ function onMessageHandler (channel, user, message, self) {
     client.say(channel, `Link to the repository :) 👉 https://github.com/ali-2465/bot2465`);
     return;
   } 
-  if (commandName === '!xd'&& (channel === "#haxk" || channel === "#ali2465" )) {
+  if (commandName === '!xd' && (channel === "#haxk" || channel === "#ali2465" )) {
     client.say(channel, `⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠛⠛⠛⠛⠛⠛⠿⠿⣿⣿⣿⣿⣿ 
                          ⣿⣿⣯⡉⠉⠉⠙⢿⣿⠟⠉⠉⠉⣩⡇⠄⠄⢀⣀⣀⡀⠄⠄⠈⠹⣿⣿⣿ 
                          ⣿⣿⣿⣷⣄⠄⠄⠈⠁⠄⠄⣠⣾⣿⡇⠄⠄⢸⣿⣿⣿⣷⡀⠄⠄⠘⣿⣿ 
@@ -110,7 +110,6 @@ function onMessageHandler (channel, user, message, self) {
       console.log(err)
     }
   }
-}
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
 } 
