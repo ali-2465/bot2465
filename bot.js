@@ -93,13 +93,9 @@ function onMessageHandler (channel, user, message, self) {
         return;
       }
 
-      const formattedResponse = pullFromRepo[0].toLowerCase().split('.')[0] + ' ' + (
-        pullFromRepo.splice(3)
-        .join('\n')
-        .replace(/-{2,}/g, "")
-        .replace(/\+{2,}/g, "")
-        )
-      
+      const formattedResponse = pullFromRepo[0].toLowerCase().split('.')[0] + 
+        ' | ' + pullFromRepo.splice(3).join('\n').replace(/-{2,}/g, "").replace(/\+{2,}/g, "");
+
       client.say(channel, `VoHiYo ${formattedResponse}`);
                   
       setTimeout(() => {
