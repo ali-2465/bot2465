@@ -99,7 +99,7 @@ function onMessageHandler (channel, user, message, self) {
         .replace(/-{2,}/g, "")
         .replace(/\+{2,}/g, "")
         )
-      console.log(pullFromRepo, formattedResponse)
+      
       client.say(channel, `VoHiYo ${formattedResponse}`);
                   
       setTimeout(() => {
