@@ -85,22 +85,17 @@ function onMessageHandler (channel, user, message, self) {
 
     const shell = require('child_process');
 
-    // scrape github dry run response
-    const checkGithubUpdate = shell.execSync(`
-      sudo git remote update | sed '$d'; 
-      sudo git status -uno | awk '{if(NR>1)print}'
-      `).toString();
+    const pullFromRepo = shell
+      .execSync('sudo git pull')
+      .toString()
+      .replace(/-{2,}/g, "")
+      .replace(/\+{2,}/g, "");
 
-    if (checkGithubUpdate.includes(`branch is up to date`)) {
-      client.say(channel, 'Bot is already up to date with repository :o');
-    } else {
-      // pull from main branch
-      shell.execSync('sudo git pull');
-      setTimeout(() => {
-        shell.execSync('sudo pm2 restart bot.js');
-        client.say(channel, 'restarting :)')
-      }, 1000);
-    }
+    client.say(channel, `TriHard FBCatch ${await pullFromRepo}`);
+                
+    setTimeout(() => {
+      shell.execSync(`sudo pm2 restart bot.js`);
+    }, 1000);
     return;
   }
   console.log(`* Unknown command ${commandName}`);
