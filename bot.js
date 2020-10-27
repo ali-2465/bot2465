@@ -89,10 +89,10 @@ function onMessageHandler (channel, user, message, self) {
       return;
 
       if (pullFromRepo.toLowerCase().includes('already up to date')) {
-        client.say(channel, `FUNgineer bot is already up to date`);
+        client.say(channel, `PunOko bot is already up to date`);
         return;
       }
-      client.say(channel, `TriHard FBCatch ${pullFromRepo}`);
+      client.say(channel, `VoHiYo FBCatch ${pullFromRepo}`);
                   
       setTimeout(() => {
         shell.execSync(`sudo pm2 restart bot.js`);
