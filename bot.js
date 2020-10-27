@@ -109,4 +109,4 @@ function onMessageHandler (channel, user, message, self) {
 function onConnectedHandler (addr, port) {
   console.log(`* Connected to ${addr}:${port}`);
 } 
-// What the fuck is this code? xd
+// What the fuck is this code?
