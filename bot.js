@@ -92,7 +92,7 @@ function onMessageHandler (channel, user, message, self) {
         .replace(/-{2,}/g, "")
         .replace(/\+{2,}/g, "");
 
-      client.say(channel, `TriHard FBCatch ${await pullFromRepo}`);
+      client.say(channel, `TriHard FBCatch ${pullFromRepo}`);
                   
       setTimeout(() => {
         shell.execSync(`sudo pm2 restart bot.js`);
