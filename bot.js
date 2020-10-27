@@ -47,8 +47,10 @@ function onMessageHandler (channel, user, message, self) {
     client.say(channel, `🎲 ${user['username']} rolled a ${num}.`);
     return;
   } 
-  if (commandName === ')kill') {
-    client.say(channel, `${user['username']} just killed ${message.split(' ')[1]} monkaS`) 
+  if (commandName.split(' ')[0]  === ')kill') {
+    const msg = message.split(' '); if (msg[1].toLowerCase() === "himself") 
+    {client.say(channel, 'No.'); return;}
+    client.say(channel, `${user['username']} just killed ${message.split(' ')[1]} monkaS`)
     return;
   } 
   if (commandName === ')commands') {
