@@ -108,5 +108,5 @@ function onMessageHandler (channel, user, message, self) {
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
   console.log(`* Connected to ${addr}:${port}`);
-}
-// What the fuck is this code?
+} 
+// What the fuck is this code? xd
