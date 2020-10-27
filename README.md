@@ -1,4 +1,5 @@
 # bot2465
- Dumb twitch chat bot.
+ 	Dumb twitch chat bot.
 # Steps:
- ¯\\__(ツ)__/¯
+	1. Edit the password keys in `./config_template.js`
+ 	2. ¯\\__(ツ)__/¯
