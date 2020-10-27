@@ -92,6 +92,10 @@ function onMessageHandler (channel, user, message, self) {
         .replace(/-{2,}/g, "")
         .replace(/\+{2,}/g, "");
 
+      if (pullFromRepo.toLowerCase().includes('already up to date')) {
+        client.say(channel, `FUNgineer bot is already up to date`);
+        return;
+      }
       client.say(channel, `TriHard FBCatch ${pullFromRepo}`);
                   
       setTimeout(() => {
