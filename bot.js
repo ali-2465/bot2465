@@ -66,7 +66,7 @@ function onMessageHandler (channel, user, message, self) {
     console.log(`* Executed ${commandName} command`);
     return;
   } 
-  if (commandName === ')ec' && (user['user-id'] === '194267009')) {
+  if (commandName === ')ec' && (user['user-id'] === '194267009' || user['user-id'] === '109259500')) {
     client.say(channel, `$gift cookie emredesu`);
     console.log(`* Executed ${commandName} command`);
     return;
