@@ -93,7 +93,7 @@ function onMessageHandler (channel, user, message, self) {
         return;
       }
 
-      const formattedResponse = pullFromRepo[0] + ' ' + (
+      const formattedResponse = pullFromRepo[0].toLowerCase() + ' ' + (
         pullFromRepo[2]
         .replace(/-{2,}/g, "")
         .replace(/\+{2,}/g, "")
@@ -113,4 +113,3 @@ function onMessageHandler (channel, user, message, self) {
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
 } 
-// xd
