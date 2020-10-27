@@ -29,7 +29,7 @@ function onMessageHandler (channel, user, message, self) {
   const commandName = message.trim();
 
   // If the command is known, let's execute it
-  if ((commandName === ")ping" || commandName === ")bing")) { // 🅱ing :o } 
+  if (commandName === ")ping" || commandName === ")bing") { // 🅱ing :o } 
     client.say(channel, `🅱ing :o`);
     return;
   } 
