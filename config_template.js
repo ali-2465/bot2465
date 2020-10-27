@@ -1,1 +1,1 @@
-exports.password = "oauth:xxxxxxxxxxxxxxxxxxxxx"; // Twitch oauth
+exports.password = "oauth:xxxxxxxxxxxxxxxxxxxxx"; // Twitch oauth token
