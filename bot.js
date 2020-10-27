@@ -94,6 +94,9 @@ function onMessageHandler (channel, user, message, self) {
         .replace(/\+{2,}/g, "");   
         )
 
+      console.log(pullFromRepo, formatedResponse);
+
+      return
       if (pullFromRepo.toLowerCase().includes('already up to date')) {
         client.say(channel, `PunOko bot is already up to date`);
         return;
