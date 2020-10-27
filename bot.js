@@ -102,7 +102,7 @@ function onMessageHandler (channel, user, message, self) {
       client.say(channel, `VoHiYo ${formattedResponse}`);
                   
       setTimeout(() => {
-        shell.execSync(`sudo pm2 restart bot.js`);
+        shell.execSync(`sudo pm2 restart bot`);
       }, 1000);
       return;
     } catch (err) {
