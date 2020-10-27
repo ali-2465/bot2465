@@ -82,7 +82,7 @@ function onMessageHandler (channel, user, message, self) {
       client.say(channel, 'This command cannot be ran outside of Linux, you should use it on server version of the bot :)');
       return;
     }
-    
+
     try {
       const shell = require('child_process');
 
@@ -109,4 +109,3 @@ function onConnectedHandler (addr, port) {
   console.log(`* Connected to ${addr}:${port}`);
 } 
 // What the fuck is this code?
-// nam
