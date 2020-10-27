@@ -88,20 +88,18 @@ function onMessageHandler (channel, user, message, self) {
         .toString()
         .split('\n')
 
+      if (pullFromRepo.join('\n').toLowerCase().includes('already up to date')) {
+        client.say(channel, `PunOko bot is already up to date`);
+        return;
+      }
+
       const formatedResponse = pullFromRepo[0] + ' ' + (
         pullFromRepo[2]
         .replace(/-{2,}/g, "")
         .replace(/\+{2,}/g, "");   
         )
 
-      console.log(pullFromRepo, formatedResponse);
-
-      return
-      if (pullFromRepo.toLowerCase().includes('already up to date')) {
-        client.say(channel, `PunOko bot is already up to date`);
-        return;
-      }
-      client.say(channel, `VoHiYo FBCatch ${pullFromRepo}`);
+      client.say(channel, `VoHiYo ${formatedResponse}`);
                   
       setTimeout(() => {
         shell.execSync(`sudo pm2 restart bot.js`);
