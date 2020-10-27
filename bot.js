@@ -52,7 +52,7 @@ function onMessageHandler (channel, user, message, self) {
     return;
   } 
   if (commandName === ')commands') {
-    client.say(channel, `)ping, )info, )test, )dice, )kill`);
+    client.say(channel, `)ping, )info, )test, )dice, )kill, )repo`);
     return;
   } 
   if (commandName === ')daily%' && (user['user-id'] === '194267009')) {
@@ -61,6 +61,10 @@ function onMessageHandler (channel, user, message, self) {
   } 
   if (commandName === ')ec' && (user['user-id'] === '194267009' || user['user-id'] === '109259500')) {
     client.say(channel, `$gift cookie emredesu`);
+    return;
+  } 
+  if (commandName === ')repo') {
+    client.say(channel, `Link to the repository :) 👉 https://github.com/ali-2465/bot2465`);
     return;
   } 
   if (commandName === '!xd') {
