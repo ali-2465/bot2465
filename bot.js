@@ -88,18 +88,18 @@ function onMessageHandler (channel, user, message, self) {
         .toString()
         .split('\n')
 
-      if (pullFromRepo.join('\n').toLowerCase().includes('already up to date')) {
+      if (pullFromRepo[0].toLowerCase().includes('already up to date')) {
         client.say(channel, `PunOko bot is already up to date`);
         return;
       }
 
-      const formatedResponse = pullFromRepo[0] + ' ' + (
+      const formattedResponse = pullFromRepo[0] + ' ' + (
         pullFromRepo[2]
         .replace(/-{2,}/g, "")
         .replace(/\+{2,}/g, "");   
         )
-
-      client.say(channel, `VoHiYo ${formatedResponse}`);
+      console.log(pullFromRepo, formattedResponse)
+      client.say(channel, `VoHiYo ${formattedResponse}`);
                   
       setTimeout(() => {
         shell.execSync(`sudo pm2 restart bot.js`);
