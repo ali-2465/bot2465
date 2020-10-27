@@ -8,7 +8,7 @@ const opts = {
     password: config.password
   },
   channels: [
-    config.channels
+    "ali2465", "kunszg", "haxk", "alzexx", "fallenxy", "emredesu", "okabar", "supinic", "mariuszicutie"
   ]
 };
 // Create a client with our options
