@@ -110,4 +110,3 @@ function onMessageHandler (channel, user, message, self) {
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
 } 
-// xd
