@@ -61,12 +61,12 @@ function onMessageHandler (channel, user, message, self) {
     console.log(`* Executed ${commandName} command`);
     return;
   } 
-  if (commandName === ')daily%') {
+  if (commandName === ')daily%' && (user['user-id'] === '194267009')) {
     client.say(channel, `$% dayave`);
     console.log(`* Executed ${commandName} command`);
     return;
   } 
-  if (commandName === ')ec') {
+  if (commandName === ')ec' && (user['user-id'] === '194267009')) {
     client.say(channel, `$gift cookie emredesu`);
     console.log(`* Executed ${commandName} command`);
     return;
