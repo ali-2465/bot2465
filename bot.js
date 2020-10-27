@@ -85,7 +85,7 @@ function onMessageHandler (channel, user, message, self) {
 
       const pullFromRepo = shell
         .execSync('sudo git pull')
-      console.log(pullFromRepo)
+      console.log(String(pullFromRepo), Array(pullFromRepo))
       return;
 
       if (pullFromRepo.toLowerCase().includes('already up to date')) {
