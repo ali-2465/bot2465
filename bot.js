@@ -51,6 +51,8 @@ function onMessageHandler (channel, user, message, self) {
     const msg = message.split(' '); 
     if (((msg[1].toLowerCase() === "themselves" || msg[1].toLowerCase() === "himself") || msg[1].toLowerCase() === "herself")) 
     {client.say(channel, 'No.'); return;}
+    if (msg[1].toLowerCase() === "bot2465") 
+    {client.say(channel, "You can't kill the bot! >("); return;}
     client.say(channel, `${user['username']} just killed ${message.split(' ')[1]} monkaS`)
     return;
   } 
