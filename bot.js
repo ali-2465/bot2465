@@ -52,13 +52,17 @@ function onMessageHandler (channel, user, message, self) {
     if (((msg[1] === "themselves" || msg[1] === "himself") || msg[1] === "herself")) {
       client.say(channel, 'No.');
       return;
-  }
+    }
     if (msg[1] === "bot2465") {
       client.say(channel, "You can't kill he bot! >(");
       return;
-  }
-    client.say(channel, `${user['username']} just killed ${msg[1]} monkaS`)
-    return;
+    }
+    if (message.split(' ')[2]) {
+      client.say(channel, `${user['username']} just killed ${msg[1]} ${message.split(' ')[2]}`);
+      return; 
+    }
+      client.say(channel, `${user['username']} just killed ${msg[1]} monkaS`)
+      return;
   } 
   if (commandName === ')commands') {
     client.say(channel, `)ping, )info, )test, )dice, )kill, )repo`);
