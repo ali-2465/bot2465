@@ -54,7 +54,7 @@ function onMessageHandler (channel, user, message, self) {
       return;
     }
     if (msg[1] === "bot2465" || msg[1] === "me") {
-      client.say(channel, "You can't kill he bot! >(");
+      client.say(channel, "You can't kill the bot! >(");
       return;
     }
     if (message.split(' ')[2]) {
