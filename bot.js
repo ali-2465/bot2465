@@ -49,12 +49,20 @@ function onMessageHandler (channel, user, message, self) {
   } 
   if (commandName.split(' ')[0]  === ')kill') {
     const msg = message.toLowerCase().split(" "); 
-    if (((msg[1] === "themselves" || msg[1] === "himself") || msg[1] === "herself")) {
+    if (((msg[1] === "themselves" || msg[1] === "himself") || msg[1] === "herself" || msg[1] === "themself")) {
       client.say(channel, 'No.');
       return;
     }
     if (msg[1] === "bot2465" || msg[1] === "me") {
       client.say(channel, "You can't kill the bot! >(");
+      return;
+    }
+    if (msg[1] === "yourself" || msg[1] === "myself") {
+      client.say(channel, "That doesn't make any sense! >(")
+      return;
+    }
+    if (msg[1] === "em" || msg[1] === "them") {
+      client.say(channel, "Who are you trying to kill? RlyTho")
       return;
     }
     if (message.split(' ')[2]) {
