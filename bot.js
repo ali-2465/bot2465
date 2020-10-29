@@ -48,7 +48,11 @@ function onMessageHandler (channel, user, message, self) {
     return;
   } 
   if (commandName.split(' ')[0]  === ')kill') {
-    const msg = message.toLowerCase().split(" "); 
+    const msg = message.toLowerCase().split(" ");
+    if (!msg[1]) {
+      client.say(channel, "No victim provided. :/");
+      return;
+    } 
     if (((msg[1] === "themselves" || msg[1] === "himself") || msg[1] === "herself" || msg[1] === "themself")) {
       client.say(channel, 'No.');
       return;
@@ -96,6 +100,10 @@ function onMessageHandler (channel, user, message, self) {
                          ⣿⣿⣿⣿⠟⠁⠄⠄⠄⠄⠙⢿⣿⣿⡇⠄⠄⠸⠿⠿⠿⠟⠄⠄⠄⣰⣿⣿ 
                          ⣿⡿⠟⠁⠄⢀⣰⣶⣄⠄⠄⠈⠻⣿⡇⠄⠄⠄⠄⠄⠄⠄⢀⣠⣾⣿⣿⣿ 
                          ⣿⣷⣶⣶⣶⣿⣿⣿⣿⣷⣶⣶⣶⣿⣷⣶⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿`);
+    return;
+  }
+  if (commandName === ')friday'&& (channel === "#ali2465")) {
+    client.say(channel, "🕺 https://youtu.be/DfEnIFV2-mc 🕺")
     return;
   } 
   if (commandName === ')restart' && (user['user-id'] === '194267009' || user['user-id'] === '178087241')) {
