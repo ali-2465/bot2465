@@ -151,4 +151,3 @@ const onMessageHandler = async (channel, user, message, self) => {
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
 } 
-// asd
