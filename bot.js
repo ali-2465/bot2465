@@ -22,11 +22,19 @@ client.on('connected', onConnectedHandler);
 client.connect();
 
 // Called every time a message comes in
-function onMessageHandler (channel, user, message, self) {
+const onMessageHandler = async (channel, user, message, self) => {
   if (self) { return; } // Ignore messages from the bot
 
   // Remove whitespace from chat message
   const commandName = message.trim();
+
+  const got = require('got');
+  const apiCall = await got('https://kunszg.xyz/api/stats').json();
+
+  console.log(apiCall);
+  console.log("\n==========================\n");
+  console.log("this is how you access objects in javascript:\n");
+  console.log("commits on kunszgbots github: " + apiCall.github.commits);
 
   // If the command is known, let's execute it
   if (commandName === ")ping" || commandName === ")bing") {
