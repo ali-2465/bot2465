@@ -21,16 +21,21 @@ client.on('connected', onConnectedHandler);
 // Connect to Twitch:
 client.connect();
 
-const got = require('got');
-const apiCall = await got('https://kunszg.xyz/api/stats').json();
 
-console.log(apiCall);
-console.log("\n==========================\n");
-console.log("this is how you access objects in javascript:\n");
-console.log("commits on kunszgbots github: " + apiCall.github.commits);
+// remove comment signs below to see how JSON works and looks like, don't commit this to github when its uncommented
+(async () => {
+
+	// const got = require('got');
+	// const apiCall = await got('https://kunszg.xyz/api/stats').json();
+
+	// console.log(apiCall);
+	// console.log("\n==========================\n");
+	// console.log("this is how you access objects in javascript:\n");
+	// console.log("commits on kunszgbots github: " + apiCall.github.commits);
+})();
 
 // Called every time a message comes in
-const onMessageHandler = async (channel, user, message, self) => {
+const onMessageHandler = (channel, user, message, self) => {
   if (self) { return; } // Ignore messages from the bot
 
   // Remove whitespace from chat message
