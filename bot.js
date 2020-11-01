@@ -35,7 +35,7 @@ client.connect();
 })();
 
 // Called every time a message comes in
-const onMessageHandler = (channel, user, message, self) => {
+function onMessageHandler(channel, user, message, self) {
   if (self) { return; } // Ignore messages from the bot
 
   // Remove whitespace from chat message
