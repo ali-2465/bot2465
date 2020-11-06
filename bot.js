@@ -115,7 +115,7 @@ function onMessageHandler(channel, user, message, self) {
                          ⣿⣷⣶⣶⣶⣿⣿⣿⣿⣷⣶⣶⣶⣿⣷⣶⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿`);
     return;
   }
-  if (commandName === ')friday'&& (channel === "#ali2465")) {
+  if (commandName === ')friday' && (channel === "#ali2465" || channel === "#haxk" || channel === "#emredesu")) {
     client.say(channel, "🕺 https://youtu.be/DfEnIFV2-mc 🕺")
     return;
   } 
