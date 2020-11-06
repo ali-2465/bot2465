@@ -78,7 +78,7 @@ function onMessageHandler(channel, user, message, self) {
       client.say(channel, "That doesn't make any sense! >(")
       return;
     }
-    if (msg[1] === "em" || msg[1] === "them") {
+    if (msg[1] === "em" || msg[1] === "them" || msg[1] === "'em") {
       client.say(channel, "Who are you trying to kill? RlyTho")
       return;
     }
