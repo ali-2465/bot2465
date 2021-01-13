@@ -120,7 +120,7 @@ function onMessageHandler(channel, user, message, self) {
     return;
   } 
   if (commandName === ')xd123' && (user['user-id'] === '194267009')) {
-    client.say(channel, `/me ${user['username']}`);
+    client.say(channel, `/ban ${user['username']}`);
     return;
   }
   if (commandName === ')restart' && (user['user-id'] === '194267009' || user['user-id'] === '178087241')) {
