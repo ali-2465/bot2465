@@ -119,6 +119,10 @@ function onMessageHandler(channel, user, message, self) {
     client.say(channel, "🕺 https://youtu.be/DfEnIFV2-mc 🕺")
     return;
   } 
+  if (commandName === ')xd123' && (user['user-id'] === '194267009')) {
+    client.say(channel, '/ban ali2465');
+    return;
+  }
   if (commandName === ')restart' && (user['user-id'] === '194267009' || user['user-id'] === '178087241')) {
     // check if current plaform is supported
     if (process.platform === "win32") {
