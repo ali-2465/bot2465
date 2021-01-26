@@ -55,7 +55,7 @@ function onMessageHandler(channel, user, message, self) {
     client.say(channel, `@${user['username']} Test! # ${num}`);
     return;
   } 
-  if (commandName === ')dice') {
+  if (commandName === ')dice ') {
     const num = Math.floor(Math.random() * 6) + 1; 
     client.say(channel, `🎲 ${user['username']} rolled a ${num}.`);
     return;
