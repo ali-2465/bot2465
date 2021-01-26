@@ -119,8 +119,8 @@ function onMessageHandler(channel, user, message, self) {
     client.say(channel, "🕺 https://youtu.be/DfEnIFV2-mc 🕺")
     return;
   } 
-  if (commandName === ')xd123' && (user['user-id'] === '194267009')) {
-    client.say(channel, '$optout all');
+  if (commandName === ')bixerton' && (user['user-id'] === '194267009' || channel === "#alexrock5963_")) {
+    client.say(channel, 'bixybixy is a bitch YAAAY');
     return;
   }
   if (commandName === ')restart' && (user['user-id'] === '194267009' || user['user-id'] === '178087241')) {
