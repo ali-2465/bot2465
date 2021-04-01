@@ -98,7 +98,7 @@ function onMessageHandler(channel, user, message, self) {
     return;
   } 
   if (commandName === ')ec' && (user['user-id'] === '194267009' || user['user-id'] === '109259500')) {
-    client.say(channel, `https://youtu.be/Pv_rP7Oet4o @emredesu`);
+    client.say(channel, `$gift cookie emredesu`);
     return;
   } 
   if (commandName === ')repo') {
