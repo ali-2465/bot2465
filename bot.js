@@ -119,7 +119,7 @@ function onMessageHandler(channel, user, message, self) {
     client.say(channel, "🕺 https://youtu.be/DfEnIFV2-mc 🕺")
     return;
   } 
-  if (commandName === ')bixerton' && (user['user-id'] === '194267009' || channel === "#alexrock5963_")) {
+  if (commandName === ')bixerton' && (user['user-id'] === '194267009' || channel === "#alexrock5963_" || channel === "ali2465")) {
     client.say(channel, 'bixybixy YAAAY');
     return;
   }
