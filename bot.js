@@ -98,7 +98,7 @@ function onMessageHandler(channel, user, message, self) {
     return;
   } 
   if (commandName === ')ec' && (user['user-id'] === '194267009' || user['user-id'] === '109259500')) {
-    client.say(channel, `$gift cookie emredesu`);
+    client.say(channel, `https://youtu.be/Pv_rP7Oet4o @emredesu`);
     return;
   } 
   if (commandName === ')repo') {
@@ -120,7 +120,7 @@ function onMessageHandler(channel, user, message, self) {
     return;
   } 
   if (commandName === ')bixerton' && (user['user-id'] === '194267009' || channel === "#alexrock5963_")) {
-    client.say(channel, 'bixybixy is a bitch YAAAY');
+    client.say(channel, 'bixybixy YAAAY');
     return;
   }
   if (commandName === ')restart' && (user['user-id'] === '194267009' || user['user-id'] === '178087241')) {
