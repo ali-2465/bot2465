@@ -66,7 +66,7 @@ function onMessageHandler(channel, user, message, self) {
       client.say(channel, "No victim provided. :/");
       return;
     } 
-    if (((msg[1] === "themselves" || msg[1] === "himself") || msg[1] === "herself" || msg[1] === "themself")) {
+    if (((msg[1] === "themselves" || msg[1] === "himself") || msg[1] === "herself" || msg[1] === "themself" || msg[1] === "itself")) {
       client.say(channel, 'No.');
       return;
     }
