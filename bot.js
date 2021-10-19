@@ -70,7 +70,7 @@ function onMessageHandler(channel, user, message, self) {
       client.say(channel, 'No.');
       return;
     }
-    if (msg[1] === "bot2465" || msg[1] === "me") {
+    if (msg[1] === "bot2465" || msg[1] === "me" || msg[1] === "the bot") {
       client.say(channel, "You can't kill the bot! >(");
       return;
     }
