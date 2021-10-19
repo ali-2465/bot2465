@@ -115,8 +115,8 @@ function onMessageHandler(channel, user, message, self) {
     client.say(channel, "🕺 https://youtu.be/DfEnIFV2-mc 🕺")
     return;
   }
-  if (commandName === 'IkuWut' || commandName === "!IkuWut" && (channel === "#ali2465" || channel === "#mustiraikkonen")) {
-    client.say(channel, "IkuWut 🤙 WUUUUUUUT ")
+  if (commandName === 'IkuWut' || commandName === '!IkuWut' && (channel === "#ali2465" || channel === "#mustiraikkonen")) {
+    client.say(channel, "IkuWut 🤙 WUUUUUUUT")
     return;
   }
   if (commandName === ')restart' && (user['user-id'] === '194267009' || user['user-id'] === '178087241')) {
