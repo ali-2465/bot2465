@@ -8,7 +8,7 @@ const opts = {
     password: config.password
   },
   channels: [
-    "ali2465", "kunszg", "haxk", "fallenxy", "emredesu", "okabar", "supinic", "dnaflamingo", "alexrock5963_"
+    "ali2465", "kunszg", "haxk", "fallenxy", "emredesu", "okabar", "supinic", "dnaflamingo", "alexrock5963_", "mustiraikkonen"
   ]
 };
 // Create a client with our options
@@ -93,10 +93,6 @@ function onMessageHandler(channel, user, message, self) {
     client.say(channel, `)ping, )info, )test, )dice, )kill, )repo`);
     return;
   } 
-  if (commandName === ')daily%' && (user['user-id'] === '194267009')) {
-    client.say(channel, `$% dayave`);
-    return;
-  } 
   if (commandName === ')ec' && (user['user-id'] === '194267009' || user['user-id'] === '109259500')) {
     client.say(channel, `$gift cookie emredesu`);
     return;
@@ -118,9 +114,9 @@ function onMessageHandler(channel, user, message, self) {
   if (commandName === ')friday' && (channel === "#ali2465" || channel === "#haxk" || channel === "#emredesu")) {
     client.say(channel, "🕺 https://youtu.be/DfEnIFV2-mc 🕺")
     return;
-  } 
-  if (commandName === ')bixerton' && (user['user-id'] === '194267009' || channel === "#alexrock5963_" || channel === "ali2465")) {
-    client.say(channel, 'bixybixy YAAAY');
+  }
+  if (commandName === 'IkuWut' && (channel === "#ali2465" || channel === "mustiraikkonen")) {
+    client.say(channel, "IkuWut 🤙 WUUUUUUUT ")
     return;
   }
   if (commandName === ')restart' && (user['user-id'] === '194267009' || user['user-id'] === '178087241')) {
