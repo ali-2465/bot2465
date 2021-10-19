@@ -115,7 +115,7 @@ function onMessageHandler(channel, user, message, self) {
     client.say(channel, "🕺 https://youtu.be/DfEnIFV2-mc 🕺")
     return;
   }
-  if (commandName === 'IkuWut' && channel === "#mustiraikkonen") {
+  if (commandName === 'IkuWut' && (channel === "#mustiraikkonen")) {
     client.say(channel, "IkuWut 🤙 WUUUUUUUT")
     return;
   }
