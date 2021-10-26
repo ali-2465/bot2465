@@ -119,6 +119,10 @@ function onMessageHandler(channel, user, message, self) {
     client.say(channel, "IkuWut 🤙 WUUUUUUUT")
     return;
   }
+  if (commandName === 'TenshiWut' && (channel === "#mustiraikkonen")) {
+    client.say(channel, "TenshiWut 🤙 WUUUUUUUT")
+    return;
+  }
   if (commandName === 'KEKW' && (channel === "#mustiraikkonen")) {
     client.say(channel, "KEKW KEEEEEEEEEEEEEEK")
     return;
