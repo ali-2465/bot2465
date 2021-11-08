@@ -127,6 +127,10 @@ function onMessageHandler(channel, user, message, self) {
     client.say(channel, "KEKW KEEEEEEEEEEEEEEK")
     return;
   }
+  if (commandName === ")cummies" || commandName === ")bussy" || commandName === ")cum") {
+    client.say(channel, `No. :z`);
+    return;
+  }
   if (commandName === ')restart' && (user['user-id'] === '194267009' || user['user-id'] === '178087241')) {
     // check if current plaform is supported
     if (process.platform === "win32") {
