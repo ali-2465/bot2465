@@ -127,6 +127,10 @@ function onMessageHandler(channel, user, message, self) {
     client.say(channel, "KEKW KEEEEEEEEEEEEEEK")
     return;
   }
+  if (commandName === 'keqingWOW' && (channel === "#mustiraikkonen")) {
+    client.say(channel, "keqingWOW 🤙 KEEEEEEEEEEEEEEQ")
+    return;
+  }
   if (commandName === ")cummies" || commandName === ")bussy" || commandName === ")cum") {
     client.say(channel, `No. :z`);
     return;
