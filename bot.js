@@ -8,7 +8,7 @@ const opts = {
     password: config.password
   },
   channels: [
-    "ali2465", "kunszg", "haxk", "fallenxy", "emredesu", "okabar", "supinic", "dnaflamingo", "alexrock5963_", "mustiraikkonen"
+    "ali2465", "kunszg", "haxk", "fallenxy", "emredesu", "okabar", "supinic", "dnaflamingo", "visioisiv", "mustiraikkonen"
   ]
 };
 // Create a client with our options
@@ -129,6 +129,10 @@ function onMessageHandler(channel, user, message, self) {
   }
   if (commandName === 'keqingWOW' && (channel === "#mustiraikkonen")) {
     client.say(channel, "keqingWOW 🤙 KEEEEEEEEEEEEEEQ")
+    return;
+  }  
+  if (commandName === 'YESIDOTHINKSO' && (channel === "#visioisiv")) {
+    client.say(channel, "YESIDOTHINKSO")
     return;
   }
   if (commandName === ")cummies" || commandName === ")bussy" || commandName === ")cum") {
