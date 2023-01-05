@@ -8,7 +8,7 @@ const opts = {
     password: config.password
   },
   channels: [
-    "ali2465", "kunszg", "haxk", "fallenxy", "emredesu", "okabar", "supinic", "dnaflamingo", "visioisiv", "mustiraikkonen"
+    "ali2465", "kunszg", "haxk", "fallenxy", "emredesu", "okabar", "supinic", "dnaflamingo", "visioisiv", "kimimayushi"
   ]
 };
 // Create a client with our options
@@ -115,23 +115,23 @@ function onMessageHandler(channel, user, message, self) {
     client.say(channel, "🕺 https://youtu.be/DfEnIFV2-mc 🕺")
     return;
   }
-  if (commandName === 'IkuWut' && (channel === "#mustiraikkonen")) {
+  if (commandName === 'IkuWut' && (channel === "#kimimayushi")) {
     client.say(channel, "IkuWut 🤙 WUUUUUUUT")
     return;
   }
-  if (commandName === 'TenshiWut' && (channel === "#mustiraikkonen")) {
+  if (commandName === 'TenshiWut' && (channel === "#kimimayushi")) {
     client.say(channel, "TenshiWut 🤙 WUUUUUUUT")
     return;
   }
-  if (commandName === 'KeqingWut' && (channel === "#mustiraikkonen")) {
+  if (commandName === 'KeqingWut' && (channel === "#kimimayushi")) {
     client.say(channel, "KeqingWut 🤙 WUUUUUUUT")
     return;
   }
-  if (commandName === 'KEKW' && (channel === "#mustiraikkonen")) {
+  if (commandName === 'KEKW' && (channel === "#kimimayushi")) {
     client.say(channel, "KEKW KEEEEEEEEEEEEEEK")
     return;
   }
-  if (commandName === 'keqingWOW' && (channel === "#mustiraikkonen")) {
+  if (commandName === 'keqingWOW' && (channel === "#kimimayushi")) {
     client.say(channel, "keqingWOW 🤙 KEEEEEEEEEEEEEEQ")
     return;
   }  
